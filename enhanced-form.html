@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netala Coffee Shop - Menu & Feedback</title>
+  <meta name="description" content="Netala Coffee Shop - Menu, prices, and customer feedback form. Enjoy the best coffee, tea, and local favorites.">
+</head>
+<body>
+
+  <header>
+    <h1>Netala Coffee Shop</h1>
+    <p>Your daily dose of happiness in a cup</p>
+  </header>
+
+  <main>
+    <!-- Coffee Images -->
+    <section>
+      <h2>Our Coffee Selection</h2>
+      <img src="coffee.jpeg" alt="Cup of coffee" width="300">
+      <img src="black-tea.avif" alt="Black tea" width="300">
+      <img src="tea.jpg" alt="Tea" width="300">
+      <img src="uji-power.jpg" alt="Uji power" width="300">
+    </section>
+
+    <!-- Most Popular Drinks -->
+    <section>
+      <h2>Most Popular Drinks</h2>
+      <ul>
+        <li>Latte</li>
+        <li>Capuccino</li>
+        <li>Black tea</li>
+        <li>Tea</li>
+        <li>Dawa</li>
+        <li>Uji Power</li>
+      </ul>
+    </section>
+
+    <!-- Drink Sizes & Prices Table -->
+    <section>
+      <h2>Drink Sizes & Prices</h2>
+      <table border="2">
+        <tr>
+          <th>Drink</th>
+          <th>Small (KSh)</th>
+          <th>Medium (KSh)</th>
+          <th>Large (KSh)</th>
+        </tr>
+        <tr>
+          <td>Latte</td>
+          <td>150</td>
+          <td>200</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>Capuccino</td>
+          <td>140</td>
+          <td>190</td>
+          <td>240</td>
+        </tr>
+        <tr>
+          <td>Black Tea</td>
+          <td>50</td>
+          <td>80</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Tea</td>
+          <td>40</td>
+          <td>70</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Dawa</td>
+          <td>120</td>
+          <td>150</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Uji Power</td>
+          <td>80</td>
+          <td>110</td>
+          <td>140</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+      <h2>Customer Feedback Form</h2>
+      <form action="#" method="post">
+        
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required autocomplete="name" minlength="3">
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label for="visit-date">Date of Visit:</label><br>
+        <input type="date" id="visit-date" name="visit-date" required>
+        <br><br>
+
+        <label for="drink">Favorite Drink:</label><br>
+        <select id="drink" name="drink" required>
+          <option value="">--Select a drink--</option>
+          <option value="latte">Latte</option>
+          <option value="capuccino">Capuccino</option>
+          <option value="black-tea">Black Tea</option>
+          <option value="tea">Tea</option>
+          <option value="dawa">Dawa</option>
+          <option value="uji-power">Uji Power</option>
+        </select>
+        <br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your feedback here..." required></textarea>
+        <br><br>
+
+        <label for="rating">Rating (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+        <br><br>
+
+        <label for="shop-name">Shop Name:</label><br>
+        <input type="text" id="shop-name" name="shop-name" value="Netala Coffee Shop" readonly>
+        <br><br>
+
+        <input type="submit" value="Submit Feedback">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Netala Coffee Shop</p>
+    <p>Contact us: info@netalacoffee.com</p>
+  </footer>
+
+</body>
+</html>
